@@ -18,15 +18,23 @@
   font-weight: 500;
   color: lighten($grey, 17%);
   cursor: pointer;
-  transition: color 0.25s;
+  transition: color 0.25s, background-color 0.1s, border-bottom 0s;
 
   &:hover {
    color: #333;
   }
+  &:active,
+  &:focus {
+   background-color: rgba(0, 0, 0, 0.02);
+   margin-bottom: -4px;
+   padding-bottom: 1px;
+   border-bottom: 3px solid $blue;
+  }
 
   &--active {
    color: #333;
-   margin-bottom: -3.5px;
+   margin-bottom: -4px;
+   padding-bottom: 1px;
    border-bottom: 3px solid $blue;
   }
  }

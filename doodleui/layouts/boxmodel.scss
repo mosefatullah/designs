@@ -1,0 +1,54 @@
+.border,
+[class*="border"] {
+ border: 1px solid #e5e5e5 !important;
+}
+.border-top {
+ border-top: 1px solid #e5e5e5 !important;
+}
+.border-right {
+ border-right: 1px solid #e5e5e5 !important;
+}
+.border-bottom {
+ border-bottom: 1px solid #e5e5e5 !important;
+}
+.border-left {
+ border-left: 1px solid #e5e5e5 !important;
+}
+.border {
+ &__red {
+  border-color: $red !important;
+ }
+ &__orange {
+  border-color: $orange !important;
+ }
+ &__yellow {
+  border-color: $yellow !important;
+ }
+ &__green {
+  border-color: $green !important;
+ }
+ &__blue {
+  border-color: $blue !important;
+ }
+ &__indigo {
+  border-color: $indigo !important;
+ }
+ &__violet {
+  border-color: $violet !important;
+ }
+ &__grey {
+  border-color: $grey !important;
+ }
+ &__light {
+  border-color: $light !important;
+ }
+ &__dark {
+  border-color: $dark !important;
+ }
+ &__black {
+  border-color: $black !important;
+ }
+ &__white {
+  border-color: $white !important;
+ }
+}

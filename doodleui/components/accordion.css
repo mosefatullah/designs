@@ -1,0 +1,27 @@
+.accordion {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 1em;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.accordion:last-child {
+  margin-bottom: 0;
+}
+.accordion__item {
+  border-top: 1px solid #ccc;
+}
+.accordion__item:last-child {
+  border-bottom: 1px solid #ccc;
+}
+.accordion__item.active {
+  border-color: #ccc;
+}
+.accordion__item.active .accordion__title {
+  background-color: #ccc;
+  color: #fff;
+}
+.accordion__item.active .accordion__content {
+  display: block;
+}

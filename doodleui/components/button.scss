@@ -1,4 +1,5 @@
-[class^="button__"],.button {
+[class*="button__"],
+.button {
  font-size: 16px;
  font-weight: 500;
  letter-spacing: normal;
@@ -11,14 +12,22 @@
  user-select: none;
  transition: background-color 0.2s, box-shadow 0.2s, color 0.2s;
 }
-.button-small {
-  font-size: 14px;
-  padding: 10px 16px 9px;
+[class*="--small"] {
+ font-size: 14px;
+ padding: 10px 16px 9px;
 }
+[class*="--large"] {
+ font-size: 16px;
+ padding: 18px 24px 18px;
+}
+[class*="--rounded"] {
+ border-radius: 32px;
+}
+
 /** 
-* Button: Primary
+* Button: blue
 **/
-.button__primary {
+.button__blue {
  &,
  &--outlined,
  &--text {
@@ -36,7 +45,6 @@
     0 2px 6px 2px rgba(60, 64, 67, 0.15);
   }
  }
- /* Outlined & Text */
  &--outlined,
  &--text {
   background-color: transparent;
@@ -74,9 +82,9 @@
 }
 
 /**
-* Button: Danger
+* Button: red
 **/
-.button__danger {
+.button__red {
  &,
  &--outlined,
  &--text {
@@ -94,7 +102,6 @@
     0 2px 6px 2px rgba(60, 64, 67, 0.15);
   }
  }
- /* Outlined & Text */
  &--outlined,
  &--text {
   background-color: transparent;
@@ -132,9 +139,9 @@
 }
 
 /**
-* Button: Success
+* Button: green
 **/
-.button__success {
+.button__green {
  &,
  &--outlined,
  &--text {
@@ -152,7 +159,6 @@
     0 2px 6px 2px rgba(60, 64, 67, 0.15);
   }
  }
- /* Outlined & Text */
  &--outlined,
  &--text {
   background-color: transparent;
@@ -190,9 +196,9 @@
 }
 
 /**
-* Button: Warning
+* Button: yellow
 **/
-.button__warning {
+.button__yellow {
  &,
  &--outlined,
  &--text {
@@ -210,7 +216,6 @@
     0 2px 6px 2px rgba(60, 64, 67, 0.15);
   }
  }
- /* Outlined & Text */
  &--outlined,
  &--text {
   background-color: transparent;
@@ -268,7 +273,6 @@
     0 2px 6px 2px rgba(60, 64, 67, 0.15);
   }
  }
- /* Outlined & Text */
  &--outlined,
  &--text {
   background-color: transparent;
