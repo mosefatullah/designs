@@ -1,0 +1,27 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 40px;
+}
+.breadcrumb .breadcrumb__item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.breadcrumb .breadcrumb__item::after {
+  content: "/";
+  margin: 0 10px;
+}
+.breadcrumb .breadcrumb__item .link,
+.breadcrumb .breadcrumb__item a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: gr;
+  text-decoration: none;
+}
+.breadcrumb .breadcrumb__item .link:hover,
+.breadcrumb .breadcrumb__item a:hover {
+  color: #1890ff;
+}
