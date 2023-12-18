@@ -798,6 +798,8 @@ summary {
   align-items: center;
   padding: 0 10px;
   height: 40px;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 .breadcrumb .breadcrumb__item {
   display: flex;
