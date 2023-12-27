@@ -1,3 +1,4 @@
+/* Structure */
 .border,
 [class*="border"] {
  border: 1px solid #e5e5e5 !important;
@@ -61,6 +62,23 @@
  }
  &-white {
   border-color: $white !important;
+ }
+}
+.shadow {
+ &-none {
+  box-shadow: none !important;
+ }
+ &-sm {
+  box-shadow: $shadow-sm !important;
+ }
+ &-md {
+  box-shadow: $shadow-md !important;
+ }
+ &-lg {
+  box-shadow: $shadow-lg !important;
+ }
+ &-inset {
+  box-shadow: $shadow-inset !important;
  }
 }
 .float {

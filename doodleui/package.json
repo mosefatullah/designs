@@ -1,14 +1,13 @@
 {
   "name": "doodleui",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "sass --watch doodleui.scss:dist/doodleui.css"
+    "start": "sass --watch scss/doodleui.scss:dist/doodleui.css"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Mohammad Sefatullah",
+  "license": "MIT",
   "devDependencies": {
     "sass": "^1.69.5"
   }

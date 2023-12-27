@@ -1,3 +1,4 @@
+/* Grid */
 .row {
  display: flex;
  flex-wrap: wrap;
@@ -97,426 +98,426 @@
  width: 100%;
 }
 @media (min-width: 576px) {
- .col-sm {
+ .sm\:col {
   flex: 1 0 0%;
  }
- .row-cols-sm-auto > * {
+ .sm\:row-cols-auto > * {
   flex: 0 0 auto;
   width: auto;
  }
- .row-cols-sm-1 > * {
+ .sm\:row-cols-1 > * {
   flex: 0 0 auto;
   width: 100%;
  }
- .row-cols-sm-2 > * {
+ .sm\:row-cols-2 > * {
   flex: 0 0 auto;
   width: 50%;
  }
- .row-cols-sm-3 > * {
+ .sm\:row-cols-3 > * {
   flex: 0 0 auto;
   width: 33.33333333%;
  }
- .row-cols-sm-4 > * {
+ .sm\:row-cols-4 > * {
   flex: 0 0 auto;
   width: 25%;
  }
- .row-cols-sm-5 > * {
+ .sm\:row-cols-5 > * {
   flex: 0 0 auto;
   width: 20%;
  }
- .row-cols-sm-6 > * {
+ .sm\:row-cols-6 > * {
   flex: 0 0 auto;
   width: 16.66666667%;
  }
- .col-sm-auto {
+ .sm\:col-auto {
   flex: 0 0 auto;
   width: auto;
  }
- .col-sm-1 {
+ .sm\:col-1 {
   flex: 0 0 auto;
   width: 8.33333333%;
  }
- .col-sm-2 {
+ .sm\:col-2 {
   flex: 0 0 auto;
   width: 16.66666667%;
  }
- .col-sm-3 {
+ .sm\:col-3 {
   flex: 0 0 auto;
   width: 25%;
  }
- .col-sm-4 {
+ .sm\:col-4 {
   flex: 0 0 auto;
   width: 33.33333333%;
  }
- .col-sm-5 {
+ .sm\:col-5 {
   flex: 0 0 auto;
   width: 41.66666667%;
  }
- .col-sm-6 {
+ .sm\:col-6 {
   flex: 0 0 auto;
   width: 50%;
  }
- .col-sm-7 {
+ .sm\:col-7 {
   flex: 0 0 auto;
   width: 58.33333333%;
  }
- .col-sm-8 {
+ .sm\:col-8 {
   flex: 0 0 auto;
   width: 66.66666667%;
  }
- .col-sm-9 {
+ .sm\:col-9 {
   flex: 0 0 auto;
   width: 75%;
  }
- .col-sm-10 {
+ .sm\:col-10 {
   flex: 0 0 auto;
   width: 83.33333333%;
  }
- .col-sm-11 {
+ .sm\:col-11 {
   flex: 0 0 auto;
   width: 91.66666667%;
  }
- .col-sm-12 {
+ .sm\:col-12 {
   flex: 0 0 auto;
   width: 100%;
  }
 }
 @media (min-width: 768px) {
- .col-md {
+ .md\:col {
   flex: 1 0 0%;
  }
- .row-cols-md-auto > * {
+ .md\:row-cols-auto > * {
   flex: 0 0 auto;
   width: auto;
  }
- .row-cols-md-1 > * {
+ .md\:row-cols-1 > * {
   flex: 0 0 auto;
   width: 100%;
  }
- .row-cols-md-2 > * {
+ .md\:row-cols-2 > * {
   flex: 0 0 auto;
   width: 50%;
  }
- .row-cols-md-3 > * {
+ .md\:row-cols-3 > * {
   flex: 0 0 auto;
   width: 33.33333333%;
  }
- .row-cols-md-4 > * {
+ .md\:row-cols-4 > * {
   flex: 0 0 auto;
   width: 25%;
  }
- .row-cols-md-5 > * {
+ .md\:row-cols-5 > * {
   flex: 0 0 auto;
   width: 20%;
  }
- .row-cols-md-6 > * {
+ .md\:row-cols-6 > * {
   flex: 0 0 auto;
   width: 16.66666667%;
  }
- .col-md-auto {
+ .md\:col-auto {
   flex: 0 0 auto;
   width: auto;
  }
- .col-md-1 {
+ .md\:col-1 {
   flex: 0 0 auto;
   width: 8.33333333%;
  }
- .col-md-2 {
+ .md\:col-2 {
   flex: 0 0 auto;
   width: 16.66666667%;
  }
- .col-md-3 {
+ .md\:col-3 {
   flex: 0 0 auto;
   width: 25%;
  }
- .col-md-4 {
+ .md\:col-4 {
   flex: 0 0 auto;
   width: 33.33333333%;
  }
- .col-md-5 {
+ .md\:col-5 {
   flex: 0 0 auto;
   width: 41.66666667%;
  }
- .col-md-6 {
+ .md\:col-6 {
   flex: 0 0 auto;
   width: 50%;
  }
- .col-md-7 {
+ .md\:col-7 {
   flex: 0 0 auto;
   width: 58.33333333%;
  }
- .col-md-8 {
+ .md\:col-8 {
   flex: 0 0 auto;
   width: 66.66666667%;
  }
- .col-md-9 {
+ .md\:col-9 {
   flex: 0 0 auto;
   width: 75%;
  }
- .col-md-10 {
+ .md\:col-10 {
   flex: 0 0 auto;
   width: 83.33333333%;
  }
- .col-md-11 {
+ .md\:col-11 {
   flex: 0 0 auto;
   width: 91.66666667%;
  }
- .col-md-12 {
+ .md\:col-12 {
   flex: 0 0 auto;
   width: 100%;
  }
 }
 @media (min-width: 992px) {
- .col-lg {
+ .lg\:col {
   flex: 1 0 0%;
  }
- .row-cols-lg-auto > * {
+ .lg\:row-cols-auto > * {
   flex: 0 0 auto;
   width: auto;
  }
- .row-cols-lg-1 > * {
+ .lg\:row-cols-1 > * {
   flex: 0 0 auto;
   width: 100%;
  }
- .row-cols-lg-2 > * {
+ .lg\:row-cols-2 > * {
   flex: 0 0 auto;
   width: 50%;
  }
- .row-cols-lg-3 > * {
+ .lg\:row-cols-3 > * {
   flex: 0 0 auto;
   width: 33.33333333%;
  }
- .row-cols-lg-4 > * {
+ .lg\:row-cols-4 > * {
   flex: 0 0 auto;
   width: 25%;
  }
- .row-cols-lg-5 > * {
+ .lg\:row-cols-5 > * {
   flex: 0 0 auto;
   width: 20%;
  }
- .row-cols-lg-6 > * {
+ .lg\:row-cols-6 > * {
   flex: 0 0 auto;
   width: 16.66666667%;
  }
- .col-lg-auto {
+ .lg\:col-auto {
   flex: 0 0 auto;
   width: auto;
  }
- .col-lg-1 {
+ .lg\:col-1 {
   flex: 0 0 auto;
   width: 8.33333333%;
  }
- .col-lg-2 {
+ .lg\:col-2 {
   flex: 0 0 auto;
   width: 16.66666667%;
  }
- .col-lg-3 {
+ .lg\:col-3 {
   flex: 0 0 auto;
   width: 25%;
  }
- .col-lg-4 {
+ .lg\:col-4 {
   flex: 0 0 auto;
   width: 33.33333333%;
  }
- .col-lg-5 {
+ .lg\:col-5 {
   flex: 0 0 auto;
   width: 41.66666667%;
  }
- .col-lg-6 {
+ .lg\:col-6 {
   flex: 0 0 auto;
   width: 50%;
  }
- .col-lg-7 {
+ .lg\:col-7 {
   flex: 0 0 auto;
   width: 58.33333333%;
  }
- .col-lg-8 {
+ .lg\:col-8 {
   flex: 0 0 auto;
   width: 66.66666667%;
  }
- .col-lg-9 {
+ .lg\:col-9 {
   flex: 0 0 auto;
   width: 75%;
  }
- .col-lg-10 {
+ .lg\:col-10 {
   flex: 0 0 auto;
   width: 83.33333333%;
  }
- .col-lg-11 {
+ .lg\:col-11 {
   flex: 0 0 auto;
   width: 91.66666667%;
  }
- .col-lg-12 {
+ .lg\:col-12 {
   flex: 0 0 auto;
   width: 100%;
  }
 }
 @media (min-width: 1200px) {
- .col-xl {
+ .xl\:col {
   flex: 1 0 0%;
  }
- .row-cols-xl-auto > * {
+ .xl\:row-cols-auto > * {
   flex: 0 0 auto;
   width: auto;
  }
- .row-cols-xl-1 > * {
+ .xl\:row-cols-1 > * {
   flex: 0 0 auto;
   width: 100%;
  }
- .row-cols-xl-2 > * {
+ .xl\:row-cols-2 > * {
   flex: 0 0 auto;
   width: 50%;
  }
- .row-cols-xl-3 > * {
+ .xl\:row-cols-3 > * {
   flex: 0 0 auto;
   width: 33.33333333%;
  }
- .row-cols-xl-4 > * {
+ .xl\:row-cols-4 > * {
   flex: 0 0 auto;
   width: 25%;
  }
- .row-cols-xl-5 > * {
+ .xl\:row-cols-5 > * {
   flex: 0 0 auto;
   width: 20%;
  }
- .row-cols-xl-6 > * {
+ .xl\:row-cols-6 > * {
   flex: 0 0 auto;
   width: 16.66666667%;
  }
- .col-xl-auto {
+ .xl\:col-auto {
   flex: 0 0 auto;
   width: auto;
  }
- .col-xl-1 {
+ .xl\:col-1 {
   flex: 0 0 auto;
   width: 8.33333333%;
  }
- .col-xl-2 {
+ .xl\:col-2 {
   flex: 0 0 auto;
   width: 16.66666667%;
  }
- .col-xl-3 {
+ .xl\:col-3 {
   flex: 0 0 auto;
   width: 25%;
  }
- .col-xl-4 {
+ .xl\:col-4 {
   flex: 0 0 auto;
   width: 33.33333333%;
  }
- .col-xl-5 {
+ .xl\:col-5 {
   flex: 0 0 auto;
   width: 41.66666667%;
  }
- .col-xl-6 {
+ .xl\:col-6 {
   flex: 0 0 auto;
   width: 50%;
  }
- .col-xl-7 {
+ .xl\:col-7 {
   flex: 0 0 auto;
   width: 58.33333333%;
  }
- .col-xl-8 {
+ .xl\:col-8 {
   flex: 0 0 auto;
   width: 66.66666667%;
  }
- .col-xl-9 {
+ .xl\:col-9 {
   flex: 0 0 auto;
   width: 75%;
  }
- .col-xl-10 {
+ .xl\:col-10 {
   flex: 0 0 auto;
   width: 83.33333333%;
  }
- .col-xl-11 {
+ .xl\:col-11 {
   flex: 0 0 auto;
   width: 91.66666667%;
  }
- .col-xl-12 {
+ .xl\:col-12 {
   flex: 0 0 auto;
   width: 100%;
  }
 }
 @media (min-width: 1400px) {
- .col-xxl {
+ .xxl\:col {
   flex: 1 0 0%;
  }
- .row-cols-xxl-auto > * {
+ .xxl\:row-cols-auto > * {
   flex: 0 0 auto;
   width: auto;
  }
- .row-cols-xxl-1 > * {
+ .xxl\:row-cols-1 > * {
   flex: 0 0 auto;
   width: 100%;
  }
- .row-cols-xxl-2 > * {
+ .xxl\:row-cols-2 > * {
   flex: 0 0 auto;
   width: 50%;
  }
- .row-cols-xxl-3 > * {
+ .xxl\:row-cols-3 > * {
   flex: 0 0 auto;
   width: 33.33333333%;
  }
- .row-cols-xxl-4 > * {
+ .xxl\:row-cols-4 > * {
   flex: 0 0 auto;
   width: 25%;
  }
- .row-cols-xxl-5 > * {
+ .xxl\:row-cols-5 > * {
   flex: 0 0 auto;
   width: 20%;
  }
- .row-cols-xxl-6 > * {
+ .xxl\:row-cols-6 > * {
   flex: 0 0 auto;
   width: 16.66666667%;
  }
- .col-xxl-auto {
+ .xxl\:col-auto {
   flex: 0 0 auto;
   width: auto;
  }
- .col-xxl-1 {
+ .xxl\:col-1 {
   flex: 0 0 auto;
   width: 8.33333333%;
  }
- .col-xxl-2 {
+ .xxl\:col-2 {
   flex: 0 0 auto;
   width: 16.66666667%;
  }
- .col-xxl-3 {
+ .xxl\:col-3 {
   flex: 0 0 auto;
   width: 25%;
  }
- .col-xxl-4 {
+ .xxl\:col-4 {
   flex: 0 0 auto;
   width: 33.33333333%;
  }
- .col-xxl-5 {
+ .xxl\:col-5 {
   flex: 0 0 auto;
   width: 41.66666667%;
  }
- .col-xxl-6 {
+ .xxl\:col-6 {
   flex: 0 0 auto;
   width: 50%;
  }
- .col-xxl-7 {
+ .xxl\:col-7 {
   flex: 0 0 auto;
   width: 58.33333333%;
  }
- .col-xxl-8 {
+ .xxl\:col-8 {
   flex: 0 0 auto;
   width: 66.66666667%;
  }
- .col-xxl-9 {
+ .xxl\:col-9 {
   flex: 0 0 auto;
   width: 75%;
  }
- .col-xxl-10 {
+ .xxl\:col-10 {
   flex: 0 0 auto;
   width: 83.33333333%;
  }
- .col-xxl-11 {
+ .xxl\:col-11 {
   flex: 0 0 auto;
   width: 91.66666667%;
  }
- .col-xxl-12 {
+ .xxl\:col-12 {
   flex: 0 0 auto;
   width: 100%;
  }

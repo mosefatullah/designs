@@ -1,3 +1,4 @@
+/* Button */
 [class*="button__"],
 .button {
  font-size: 16px;
@@ -39,9 +40,6 @@
  border-color: $black !important;
 }
 
-/** 
-* Button: blue
-**/
 .button__blue {
  &,
  &--outlined,
@@ -96,9 +94,6 @@
  }
 }
 
-/**
-* Button: red
-**/
 .button__red {
  &,
  &--outlined,
@@ -153,9 +148,6 @@
  }
 }
 
-/**
-* Button: green
-**/
 .button__green {
  &,
  &--outlined,
@@ -210,9 +202,6 @@
  }
 }
 
-/**
-* Button: yellow
-**/
 .button__yellow {
  &,
  &--outlined,
@@ -267,9 +256,6 @@
  }
 }
 
-/**
-* Button: Dark
-**/
 .button__dark {
  &,
  &--outlined,
