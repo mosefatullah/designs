@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cloud Computing Services | Google Cloud</title>
-    <link rel="stylesheet" href="doodle-ui.css">
+    <link rel="stylesheet" href="dist/doodleui.css">
 </head>
 
 <body>
@@ -17,7 +17,17 @@
                     alt="" style="height: 28px;">
             </div>
             <div class="menu">
-                <ul style="display: flex; align-items: center; list-style: none; margin: 0; padding: 0;">
+                <style>
+                    .menu__item {
+                        color: #5f6368;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 1.71;
+                        letter-spacing: .2px;
+                        transition: color .2s cubic-bezier(.4, 0, .2, 1);
+                    }
+                </style>
+                <ul style="display: flex; align-items: center; list-style: none; margin: 0; padding: 0; gap: 10px;">
                     <li style="margin-right: 1rem;"><a href="#" class="menu__item">Products</a></li>
                     <li style="margin-right: 1rem;"><a href="#" class="menu__item">Solutions</a></li>
                     <li style="margin-right: 1rem;"><a href="#" class="menu__item">Pricing</a></li>
@@ -25,7 +35,7 @@
                     <li style="margin-right: 1rem;"><a href="#" class="menu__item">Blog</a></li>
                     <li style="margin-right: 1rem;"><a href="#" class="menu__item">Contact sales</a></li>
                     <li style="margin-right: 1rem;"><a href="#" class="menu__item">Sign in</a></li>
-                    <li><a href="#" class="menu__item menu__item--blue">Get started for free</a></li>
+                    <li><a href="#" class="button__blue button--small">Get started for free</a></li>
                 </ul>
             </div>
         </div>
@@ -108,8 +118,8 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card card__horizontal">
                         <div class="card__content">
-                            <p class="card__content__label">PRODUCT ANNOUNCEMENT</p>
-                            <p class="card__content__paragraph">Learn how to customize and deploy Gemini in Vertex AI
+                            <p class="card__content--label">PRODUCT ANNOUNCEMENT</p>
+                            <p class="card__content--paragraph">Learn how to customize and deploy Gemini in Vertex AI
                             </p>
                         </div>
                         <div class="card__image">
@@ -121,8 +131,8 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card card__horizontal">
                         <div class="card__content">
-                            <p class="card__content__label">PRODUCT ANNOUNCEMENT</p>
-                            <p class="card__content__paragraph">Learn how to customize and deploy Gemini in Vertex AI
+                            <p class="card__content--label">PRODUCT ANNOUNCEMENT</p>
+                            <p class="card__content--paragraph">Learn how to customize and deploy Gemini in Vertex AI
                             </p>
                         </div>
                         <div class="card__image">
@@ -134,8 +144,8 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card card__horizontal">
                         <div class="card__content">
-                            <p class="card__content__label">PRODUCT ANNOUNCEMENT</p>
-                            <p class="card__content__paragraph">Learn how to customize and deploy Gemini in Vertex AI
+                            <p class="card__content--label">PRODUCT ANNOUNCEMENT</p>
+                            <p class="card__content--paragraph">Learn how to customize and deploy Gemini in Vertex AI
                             </p>
                         </div>
                         <div class="card__image">
@@ -165,12 +175,12 @@
                             alt="">
                     </div>
                     <div class="card__content">
-                        <p class="card__content__label">Research</p>
-                        <h2 class="card__content__headline">FunSearch: Making new discoveries in mathematical sciences
+                        <p class="card__content--label">Research</p>
+                        <h2 class="card__content--headline">FunSearch: Making new discoveries in mathematical sciences
                             using Large Language Models</h2>
-                        <p class="card__content__description">In a paper published in Nature, we introduce FunSearch, a
+                        <p class="card__content--description">In a paper published in Nature, we introduce FunSearch, a
                             method for searching for...</p>
-                        <p class="card__content__date">14 December 2023</p>
+                        <p class="card__content--date">14 December 2023</p>
                         <a class="button__blue--text button__small">Read more</a>
                     </div>
                 </div>
@@ -182,12 +192,12 @@
                             alt="">
                     </div>
                     <div class="card__content">
-                        <p class="card__content__label">Research</p>
-                        <h2 class="card__content__headline">FunSearch: Making new discoveries in mathematical sciences
+                        <p class="card__content--label">Research</p>
+                        <h2 class="card__content--headline">FunSearch: Making new discoveries in mathematical sciences
                             using Large Language Models</h2>
-                        <p class="card__content__description">In a paper published in Nature, we introduce FunSearch, a
+                        <p class="card__content--description">In a paper published in Nature, we introduce FunSearch, a
                             method for searching for...</p>
-                        <p class="card__content__date">14 December 2023</p>
+                        <p class="card__content--date">14 December 2023</p>
                         <a class="button__blue--text button__small">Read more</a>
                     </div>
                 </div>
@@ -199,12 +209,12 @@
                             alt="">
                     </div>
                     <div class="card__content">
-                        <p class="card__content__label">Research</p>
-                        <h2 class="card__content__headline">FunSearch: Making new discoveries in mathematical sciences
+                        <p class="card__content--label">Research</p>
+                        <h2 class="card__content--headline">FunSearch: Making new discoveries in mathematical sciences
                             using Large Language Models</h2>
-                        <p class="card__content__description">In a paper published in Nature, we introduce FunSearch, a
+                        <p class="card__content--description">In a paper published in Nature, we introduce FunSearch, a
                             method for searching for...</p>
-                        <p class="card__content__date">14 December 2023</p>
+                        <p class="card__content--date">14 December 2023</p>
                         <a class="button__blue--text button__small">Read more</a>
                     </div>
                 </div>
@@ -212,16 +222,18 @@
         </div>
     </div>
     <div class="container" style="padding-top: 3rem; padding-bottom: 5rem;">
-        <div class="row" style="gap: 2rem;">
-            <div class="col-12 col-md-5">
-                <h1 class="heading3" style="-webkit-text-fill-color: transparent;
-                margin-bottom: 1rem;
-                font-weight: 600;
-                background-clip: text;
-                background-size: 100%;
-                background-color: rgb(66,133,244);
-                background-image: linear-gradient(to bottom,rgb(0,0,0) 25%,rgb(66,133,244) 75%);">Build with the cloud
-                    platform designed for developers and AI</h1>
+        <div class="row row-gap-4">
+            <div class="col-12 col-md-6" id="rthth" style="height: min-content;">
+                <style>
+                    @media screen and (min-width: 992px) {
+                        #rthth {
+                            position: sticky;
+                            top: 100px;
+                        }
+                    }
+                </style>
+                <h1 class="heading3" style="margin-bottom: 1rem;font-weight: 600;">Build with the cloud
+                    platform <span style="color: rgb(66, 133, 244);">designed for developers and AI</span></h1>
                 <p class="paragraph">Try Google Cloud with free usage of over 20 products, plus new customers get $300
                     in free credits on
                     signup.</p>
@@ -299,30 +311,77 @@
         <div class="row" style="gap: 2rem;">
             <div class="col-12 col-md-5">
                 <ul class="list">
-                    <li class="list__item active">Retail</li>
-                    <li class="list__item">Consumer packaged goods</li>
-                    <li class="list__item">Financial services</li>
-                    <li class="list__item">Healthcare and life sciences</li>
-                    <li class="list__item">Media and entertainment</li>
-                    <li class="list__item">Telecommunications</li>
-                    <li class="list__item">Education</li>
+                    <style>
+                        .list__item img {
+                            margin-right: 1rem;
+                        }
+                    </style>
+                    <li class="list__item active"><img alt="" loading="lazy" height="24" width="24" class="vscMu LCLAt" src="https://cloud.google.com/images/icons/icn-retail.png" srcset="https://cloud.google.com/images/icons/icn-retail.png 1x, https://cloud.google.com/images/icons/icn-retail.png 2x"> Retail</li>
+                    <li class="list__item"><img alt="" loading="lazy" height="24" width="24" class="vscMu LCLAt" src="https://cloud.google.com/images/icons/icn-cpg.png" srcset="https://cloud.google.com/images/icons/icn-cpg.png 1x, https://cloud.google.com/images/icons/icn-cpg.png 2x"> Consumer packaged goods</li>
+                    <li class="list__item"><img alt="" loading="lazy" height="24" width="24" class="vscMu LCLAt" src="https://cloud.google.com/images/icons/icn-finance.png" srcset="https://cloud.google.com/images/icons/icn-finance.png 1x, https://cloud.google.com/images/icons/icn-finance.png 2x"> Financial services</li>
+                    <li class="list__item"><img alt="" loading="lazy" height="24" width="24" class="vscMu LCLAt" src="https://cloud.google.com/images/icons/icn-healthcare.png" srcset="https://cloud.google.com/images/icons/icn-healthcare.png 1x, https://cloud.google.com/images/icons/icn-healthcare.png 2x"> Healthcare and life sciences</li>
+                    <li class="list__item"><img alt="" loading="lazy" height="24" width="24" class="vscMu LCLAt" src="https://cloud.google.com/images/icons/icn-media.png" srcset="https://cloud.google.com/images/icons/icn-media.png 1x, https://cloud.google.com/images/icons/icn-media.png 2x"> Media and entertainment</li>
+                    <li class="list__item"><img alt="" loading="lazy" height="24" width="24" class="vscMu LCLAt" src="https://cloud.google.com/images/icons/icn-telecom.png" srcset="https://cloud.google.com/images/icons/icn-telecom.png 1x, https://cloud.google.com/images/icons/icn-telecom.png 2x"> Telecommunications</li>
+                    <li class="list__item"><img alt="" loading="lazy" height="24" width="24" class="vscMu LCLAt" src="https://cloud.google.com/images/icons/icn-manufacturing.png" srcset="https://cloud.google.com/images/icons/icn-manufacturing.png 1x, https://cloud.google.com/images/icons/icn-manufacturing.png 2x"> Manufacturing</li>
+                    <li class="list__item"><img alt="" loading="lazy" height="24" width="24" class="vscMu LCLAt" src="https://cloud.google.com/images/icons/icn-government.png" srcset="https://cloud.google.com/images/icons/icn-government.png 1x, https://cloud.google.com/images/icons/icn-government.png 2x"> Government</li>
+                    <li class="list__item"><img alt="" loading="lazy" height="24" width="24" class="vscMu LCLAt" src="https://cloud.google.com/images/icons/icn-education.png" srcset="https://cloud.google.com/images/icons/icn-education.png 1x, https://cloud.google.com/images/icons/icn-education.png 2x"> Education</li>
                 </ul>
-                <button class="button__blue--text mt__3 px__3">See all industries</button>
+                <button class="button__blue--text mt-3 px-3">See all industries</button>
             </div>
             <div class="col-12 col-md-6">
                 <div class="card">
-                    <div class="card__image">
-                        <img src="https://lh3.googleusercontent.com/fWc7Wtt0ge3XaM53Dwgbscfc2t7qG9mHLlES7lNwdW8lce9iiJKw_sRcXcaild2ZNm3nIjlvzO-4aMGv8EkLE6usq180w4e7ljHpWMdLQGt0NylmQYQ=w800-h450-n-nu-rw"
-                            alt="" class="p__3" style="border-radius: 1.7rem;">
+                    <div class="card__image p-3">
+                        <img src="https://lh3.googleusercontent.com/5EyEid-tzQhQcddgdzsIRe8o5madB5Y9_hA58ojWgVQ_-AcXM5JDltIjWCG_ic3oX3R5ImNbKus=rw-lo"
+                            alt="" style="border-radius: 8px;">
                     </div>
-                    <div class="card__content pt__0">
-                        <p class="card__content__description mb__2">The largest US beauty retailer easily supported a 9X
+                    <div class="card__content pt-0">
+                        <p class="card__content--description mb__2">The largest US beauty retailer easily supported a 9X
                             growth in user traffic with Google Cloud's highly scalable infrastructure.<strong> Discover
                                 what you can do with our retail solutions.</strong></p>
-                        <div class="text__center">
+                        <div class="text-center">
                             <button class="button__blue--text button--small">Explore retail solutions</button>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-3 mb-5">
+        <div class="p-3 d-flex flex-column align-item-center row-gap-3 position-relative">
+            <h1 class="heading2 text-center col-12 col-md-8" style="font-weight: 600;"><span
+                    style="color: rgb(66, 133, 244);">Let’s
+                    start
+                    building</span>&nbsp;your tomorrow, today</h1>
+            <div class="mx-auto mt-3">
+                <button class="button__blue">Get started for free</button>
+                <button class="button__blue--outlined">Contact sales</button>
+            </div>
+            <style>
+                #kjnfkr::after {
+                    background: linear-gradient(to right, rgb(234, 67, 53) 30%, rgb(66, 133, 244) 30% 70%, rgb(52, 168, 83) 70% 80%, rgb(251, 188, 4) 80%);
+                    bottom: 0;
+                    content: "";
+                    height: 6px;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                }
+            </style>
+            <div id="kjnfkr"></div>
+        </div>
+        <div class="my-5">
+            <div class="row row-gap-5">
+                <div class="col-md-4">
+                    <p class="mb-1">Work with a trusted partner</p>
+                    <a href="#">Find a partner</a>
+                </div>
+                <div class="col-md-4">
+                    <p class="mb-1">Run on the industry’s cleanest cloud</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="col-md-4">
+                    <p class="mb-1">Get updates with the Google Cloud newsletter</p>
+                    <a href="#">Subscribe</a>
                 </div>
             </div>
         </div>

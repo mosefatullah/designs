@@ -63,9 +63,12 @@ summary {
  font-size: 8vw;
 }
 .heading2 {
- font-size: 6vw;
+ font-size: 7vw;
 }
 .heading3 {
+ font-size: 6vw;
+}
+.heading4 {
  font-size: 5vw;
 }
 .paragraph {
@@ -76,12 +79,15 @@ summary {
 }
 @media screen and (min-width: 600px) {
  .heading1 {
-  font-size: 5vw;
+  font-size: 6vw;
  }
  .heading2 {
-  font-size: 4vw;
+  font-size: 5vw;
  }
  .heading3 {
+  font-size: 4vw;
+ }
+ .heading4 {
   font-size: 3vw;
  }
  .paragraph {
@@ -93,9 +99,12 @@ summary {
   font-size: min(4vw, 60px);
  }
  .heading2 {
-  font-size: min(3vw, 40px);
+  font-size: min(3.5vw, 50px);
  }
  .heading3 {
+  font-size: min(3vw, 40px);
+ }
+ .heading4 {
   font-size: min(2.5vw, 30px);
  }
  .paragraph {

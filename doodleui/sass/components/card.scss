@@ -46,27 +46,27 @@
   padding: 1.5rem;
   padding-top: 2rem;
   flex: 1 1 auto;
-  &__label,
-  &__date {
+  &--label,
+  &--date {
    font-size: 0.75rem;
    color: $grey;
    text-transform: uppercase;
   }
-  &__headline {
+  &--headline {
    font-size: 1.2rem;
    margin-top: 8px;
    line-height: 1.4;
   }
-  &__description {
+  &--description {
    font-size: 0.9rem;
    color: $grey;
    margin-top: 8px;
    line-height: 1.6;
   }
-  &__date {
+  &--date {
    margin-top: 16px;
   }
-  &__link,
+  &--link,
   a {
    position: absolute;
    bottom: 0.8rem;
@@ -90,7 +90,7 @@
    flex: 1 1 auto;
    padding: 1.5rem;
    padding-top: 2rem;
-   &__paragraph {
+   &--paragraph {
     font-size: 0.9rem;
     margin-top: 8px;
     line-height: 1.6;
