@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+</head>
+
+<body>
+    <style>
+        body {
+            -webkit-print-color-adjust: exact;
+        }
+
+        .invoice-main {
+            width: 600px;
+            height: 800px;
+            margin-left: 50%;
+            transform: translate(-50%);
+            /**/
+            border: 1px dashed grey;
+            font: normal 12px Arial, Helvetica, Sans-serif;
+            background-color: blanchedalmond;
+            padding: 20px;
+        }
+
+        .invoice-main .invoice-header {
+            display: flex;
+        }
+
+        .invoice-main .invoice-header div {
+            padding: 10px 30px;
+        }
+
+        .invoice-main .invoice-header div:nth-child(1) img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .invoice-main .invoice-header div:nth-child(2) {
+            padding: 20px 30px;
+        }
+
+        .invoice-main .invoice-header div:nth-child(2)>* {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .invoice-main .invoice-header div:nth-child(2) h1 {
+            margin-bottom: 5px;
+        }
+
+        .invoice-main .invoice-dr {
+            width: 100%;
+            height: 1px;
+            margin-top: 15px;
+            background-color: rgba(0, 0, 0, .15);
+        }
+
+        @media screen {
+            hr {
+                display: none;
+            }
+        }
+
+        @media print {
+            hr {
+                display: block;
+            }
+        }
+
+        .invoice-main .invoice-body h2 {
+            text-align: center;
+            padding: 10px;
+            font-weight: 600;
+            font-size: 20px;
+            color: rgb(184, 142, 91);
+        }
+
+        .invoice-main .invoice-body div {
+            padding: 0 10px;
+            margin-top: -70px;
+            color: rgba(93, 93, 93, 0.774);
+            font-family: monospace;
+        }
+
+        .invoice-main .invoice-body div:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .invoice-main .invoice-body div .a {
+            float: left;
+        }
+
+        .invoice-main .invoice-body div .b {
+            float: right;
+        }
+
+        .invoice-main .invoice-body .table1 {
+            margin: 30px 30px;
+            font-size: 15px;
+            color: rgb(63, 63, 63);
+        }
+
+        .invoice-main .invoice-body .table1 tr td:first-child {
+            padding-right: 40px;
+            color: rgb(29, 90, 148);
+            font-weight: 600;
+        }
+
+        .invoice-main .invoice-body .table2 {
+            margin: 30px 20px;
+            margin-bottom: 0;
+            font-size: 15px;
+            color: rgb(63, 63, 63);
+            height: 90px;
+            min-width: 90%;
+            border-collapse: collapse;
+            border-style: solid;
+        }
+
+        .invoice-main .invoice-body .table2 tr td {
+            padding: 7px;
+            text-align: right;
+        }
+
+        .invoice-main .invoice-body .alignleft {
+            text-align: left !important;
+            font-weight: bold;
+        }
+
+        .invoice-main .invoice-footer .signbox {
+            float: right;
+            width: 150px;
+            height: 50px;
+            border-bottom: 1px dashed #000;
+            width: 150px;
+            margin-right: 14px;
+            margin-top: 50px;
+        }
+
+        .invoice-main .invoice-footer .signbox p {
+            padding-top: 50px;
+            padding-left: 15px;
+            color: rgb(53, 53, 53);
+            font-weight: 600;
+        }
+    </style>
+    <div class="invoice-main">
+        <!-- header of invoice -->
+        <div class="invoice-header">
+            <div>
+                <img src="banner.png" alt="IMG" title="Alif Siddikia Model Madrasha" />
+            </div>
+            <div>
+                <h1>Darunnazat Siddikia Kamil Madrasha</h2>
+                    <h3>Sarulia, Demra, Dhaka-1361</h3>
+            </div>
+        </div>
+        <!-- line of top -->
+        <div class="invoice-dr"></div>
+        <hr />
+        <!-- body of invoice -->
+        <div class="invoice-body">
+            <h2>Money Reciept</h2>
+            <div>
+                <p class="a">Invoice ID: 5838</p>
+                <p class="b">Date: 10/04/2022</p>
+            </div>
+
+            <table class="table1">
+                <tr>
+                    <td>ID</td>
+                    <td>20209428</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Mohammad Sefatullah</td>
+                </tr>
+                <tr>
+                    <td>Class</td>
+                    <td>Asher (Ten)</td>
+                </tr>
+                <tr>
+                    <td>Group</td>
+                    <td>Science</td>
+                </tr>
+                <tr>
+                    <td>Section</td>
+                    <td>Ba</td>
+                </tr>
+                <tr>
+                    <td>Roll</td>
+                    <td>09</td>
+                </tr>
+                <tr>
+                    <td>Hall name</td>
+                    <td>Fateh Ali Hall (6th Floor)</td>
+                </tr>
+            </table>
+            <table class="table2" border="1">
+                <thead>
+                    <tr style="height: 18px;">
+                        <th style="width: 1.5%; height: 18px;">No.</th>
+                        <th style="width: 12.5%; height: 18px;">Fees Name</th>
+                        <th style="width: 12.5%; height: 18px;">Details</th>
+                        <th style="width: 12.5%; height: 18px;">Waiver</th>
+                        <th style="width: 12.5%; height: 18px;">Payable</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height: 18px;">
+                        <td>1</td>
+                        <td>Electricity Bill</td>
+                        <td>April, 2022</td>
+                        <td>0</td>
+                        <td>200</td>
+                    </tr>
+                    <tr style="height: 18px;">
+                        <td>1</td>
+                        <td>Electricity Bill</td>
+                        <td>April, 2022</td>
+                        <td>0</td>
+                        <td>200</td>
+                    </tr>
+                    <tr style="height: 48px;">
+                        <td colspan="3" rowspan="2" class="alignleft">Note:</td>
+                        <td>Total</td>
+                        <td>1440</td>
+                    </tr>
+                    <tr style="height: 48px;border-top: 0;">
+                        <td>Paid</td>
+                        <td>1440</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="alignleft" style="font-weight: 100;color: rgba(70, 70, 70, 0.787);font-family: monospace;">Design & Develop by Ubeyin Technology Ltd.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="invoice-footer">
+            <div class="signbox">
+                <p>Accountant signature</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
