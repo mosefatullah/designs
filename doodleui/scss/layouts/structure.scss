@@ -79,10 +79,10 @@
  }
 }
 .float {
- &-start {
+ &-left {
   float: left !important;
  }
- &-end {
+ &-right {
   float: right !important;
  }
  &-none {
@@ -329,10 +329,10 @@
  }
 }
 .justify-content {
- &-start {
+ &-left {
   justify-content: flex-start !important;
  }
- &-end {
+ &-right {
   justify-content: flex-end !important;
  }
  &-center {
@@ -349,10 +349,10 @@
  }
 }
 .align-item {
- &-start {
+ &-left {
   align-items: flex-start !important;
  }
- &-end {
+ &-right {
   align-items: flex-end !important;
  }
  &-center {
@@ -366,10 +366,10 @@
  }
 }
 .align-content {
- &-start {
+ &-left {
   align-content: flex-start !important;
  }
- &-end {
+ &-right {
   align-content: flex-end !important;
  }
  &-center {
@@ -389,10 +389,10 @@
  &-auto {
   align-self: auto !important;
  }
- &-start {
+ &-left {
   align-self: flex-start !important;
  }
- &-end {
+ &-right {
   align-self: flex-end !important;
  }
  &-center {
@@ -857,10 +857,10 @@
  }
 }
 .text {
- &-start {
+ &-left {
   text-align: left !important;
  }
- &-end {
+ &-right {
   text-align: right !important;
  }
  &-center {
@@ -887,10 +887,10 @@
 
 @media (min-width: 576px) {
  .sm\:float {
-  &-start {
+  &-left {
    float: left !important;
   }
-  &-end {
+  &-right {
    float: right !important;
   }
   &-none {
@@ -993,10 +993,10 @@
   }
  }
  .sm\:justify-content {
-  &-start {
+  &-left {
    justify-content: flex-start !important;
   }
-  &-end {
+  &-right {
    justify-content: flex-end !important;
   }
   &-center {
@@ -1013,10 +1013,10 @@
   }
  }
  .sm\:align-item {
-  &-start {
+  &-left {
    align-items: flex-start !important;
   }
-  &-end {
+  &-right {
    align-items: flex-end !important;
   }
   &-center {
@@ -1030,10 +1030,10 @@
   }
  }
  .sm\:align-content {
-  &-start {
+  &-left {
    align-content: flex-start !important;
   }
-  &-end {
+  &-right {
    align-content: flex-end !important;
   }
   &-center {
@@ -1053,10 +1053,10 @@
   &-auto {
    align-self: auto !important;
   }
-  &-start {
+  &-left {
    align-self: flex-start !important;
   }
-  &-end {
+  &-right {
    align-self: flex-end !important;
   }
   &-center {
@@ -1512,10 +1512,10 @@
   }
  }
  .sm\:text {
-  &-start {
+  &-left {
    text-align: left !important;
   }
-  &-end {
+  &-right {
    text-align: right !important;
   }
   &-center {
@@ -1525,10 +1525,10 @@
 }
 @media (min-width: 768px) {
  .md\:float {
-  &-start {
+  &-left {
    float: left !important;
   }
-  &-end {
+  &-right {
    float: right !important;
   }
   &-none {
@@ -1631,10 +1631,10 @@
   }
  }
  .md\:justify-content {
-  &-start {
+  &-left {
    justify-content: flex-start !important;
   }
-  &-end {
+  &-right {
    justify-content: flex-end !important;
   }
   &-center {
@@ -1651,10 +1651,10 @@
   }
  }
  .md\:align-item {
-  &-start {
+  &-left {
    align-items: flex-start !important;
   }
-  &-end {
+  &-right {
    align-items: flex-end !important;
   }
   &-center {
@@ -1668,10 +1668,10 @@
   }
  }
  .md\:align-content {
-  &-start {
+  &-left {
    align-content: flex-start !important;
   }
-  &-end {
+  &-right {
    align-content: flex-end !important;
   }
   &-center {
@@ -1691,10 +1691,10 @@
   &-auto {
    align-self: auto !important;
   }
-  &-start {
+  &-left {
    align-self: flex-start !important;
   }
-  &-end {
+  &-right {
    align-self: flex-end !important;
   }
   &-center {
@@ -2150,10 +2150,10 @@
   }
  }
  .md\:text {
-  &-start {
+  &-left {
    text-align: left !important;
   }
-  &-end {
+  &-right {
    text-align: right !important;
   }
   &-center {
@@ -2163,10 +2163,10 @@
 }
 @media (min-width: 992px) {
  .lg\:float {
-  &-start {
+  &-left {
    float: left !important;
   }
-  &-end {
+  &-right {
    float: right !important;
   }
   &-none {
@@ -2269,10 +2269,10 @@
   }
  }
  .lg\:justify-content {
-  &-start {
+  &-left {
    justify-content: flex-start !important;
   }
-  &-end {
+  &-right {
    justify-content: flex-end !important;
   }
   &-center {
@@ -2289,10 +2289,10 @@
   }
  }
  .lg\:align-item {
-  &-start {
+  &-left {
    align-items: flex-start !important;
   }
-  &-end {
+  &-right {
    align-items: flex-end !important;
   }
   &-center {
@@ -2306,10 +2306,10 @@
   }
  }
  .lg\:align-content {
-  &-start {
+  &-left {
    align-content: flex-start !important;
   }
-  &-end {
+  &-right {
    align-content: flex-end !important;
   }
   &-center {
@@ -2329,10 +2329,10 @@
   &-auto {
    align-self: auto !important;
   }
-  &-start {
+  &-left {
    align-self: flex-start !important;
   }
-  &-end {
+  &-right {
    align-self: flex-end !important;
   }
   &-center {
@@ -2788,10 +2788,10 @@
   }
  }
  .lg\:text {
-  &-start {
+  &-left {
    text-align: left !important;
   }
-  &-end {
+  &-right {
    text-align: right !important;
   }
   &-center {
@@ -2801,10 +2801,10 @@
 }
 @media (min-width: 1200px) {
  .xl\:float {
-  &-start {
+  &-left {
    float: left !important;
   }
-  &-end {
+  &-right {
    float: right !important;
   }
   &-none {
@@ -2907,10 +2907,10 @@
   }
  }
  .xl\:justify-content {
-  &-start {
+  &-left {
    justify-content: flex-start !important;
   }
-  &-end {
+  &-right {
    justify-content: flex-end !important;
   }
   &-center {
@@ -2927,10 +2927,10 @@
   }
  }
  .xl\:align-item {
-  &-start {
+  &-left {
    align-items: flex-start !important;
   }
-  &-end {
+  &-right {
    align-items: flex-end !important;
   }
   &-center {
@@ -2944,10 +2944,10 @@
   }
  }
  .xl\:align-content {
-  &-start {
+  &-left {
    align-content: flex-start !important;
   }
-  &-end {
+  &-right {
    align-content: flex-end !important;
   }
   &-center {
@@ -2967,10 +2967,10 @@
   &-auto {
    align-self: auto !important;
   }
-  &-start {
+  &-left {
    align-self: flex-start !important;
   }
-  &-end {
+  &-right {
    align-self: flex-end !important;
   }
   &-center {
@@ -3426,10 +3426,10 @@
   }
  }
  .xl\:text {
-  &-start {
+  &-left {
    text-align: left !important;
   }
-  &-end {
+  &-right {
    text-align: right !important;
   }
   &-center {
