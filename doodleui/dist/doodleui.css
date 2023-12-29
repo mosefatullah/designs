@@ -4544,6 +4544,22 @@ summary {
   border-color: rgb(0, 0, 0) !important;
 }
 
+.button__link {
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+  color: rgb(66, 133, 244);
+  font-weight: normal;
+}
+.button__link:focus, .button__link:hover, .button__link:active {
+  background-color: transparent;
+  border-color: transparent;
+  color: #0d5fe6;
+}
+.button__link:active {
+  box-shadow: none;
+}
+
 .button__blue, .button__blue--outlined, .button__blue--text {
   background-color: #2a75f3;
   border-color: transparent;

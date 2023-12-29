@@ -39,7 +39,23 @@
 [class*="--outlined"][class*="--bolder"] {
  border-color: $black !important;
 }
-
+.button__link {
+  padding: 0;
+  background-color: transparent;
+  border-color: transparent;
+  color: $blue;
+  font-weight: normal;
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: transparent;
+    border-color: transparent;
+    color: darken($blue, 13%);
+  }
+  &:active {
+    box-shadow: none;
+  }
+}
 .button__blue {
  &,
  &--outlined,

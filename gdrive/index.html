@@ -24,6 +24,10 @@
                 <h2 class="pl-1 pt-1" style="color: #5f6368">Drive</h2>
             </div>
             <style>
+                nav {
+                    overflow-x: auto;
+                }
+
                 .menu__item {
                     color: #5f6368;
                     font-size: 17px;
@@ -42,26 +46,27 @@
             <ul
                 style="display: flex; align-items: center; list-style: none; margin: 0; padding: 0; gap: 10px; margin-left: 2.25rem;margin-top: 0.3rem;">
                 <li style="margin-right: 1rem;"><a href="#" class="menu__item active">Overview</a></li>
-                <li style="margin-right: 1rem;"><a href="#" class="menu__item">Features</a></li>
-                <li style="margin-right: 1rem;"><a href="#" class="menu__item">Customers</a></li>
+                <li style="margin-right: 1rem;"><a href="#features" class="menu__item">Features</a></li>
+                <li style="margin-right: 1rem;"><a href="#customers" class="menu__item">Customers</a></li>
                 <li style="margin-right: 1rem;"><a href="#" class="menu__item">Pricing</a></li>
                 <li style="margin-right: 1rem;"><a href="#" class="menu__item">Download</a></li>
             </ul>
             <ul
                 style="display: flex; align-items: center; list-style: none; margin: 0; padding: 0; gap: 10px; margin-left: auto;">
-                <li style="margin-right: 1.5rem;"><a href="#"
+                <li style="margin-right: 1.5rem;"><a href="#" class="button__link"
                         style="color: inherit;display: flex;align-items: center;">More tools <svg
                             xmlns="http://www.w3.org/2000/svg" id="expand-more" viewBox="0 0 24 24" width="18"
                             height="18" class="ml-1">
                             <path d="M5.41 7.59L4 9l8 8 8-8-1.41-1.41L12 14.17" />
                         </svg></a></li>
-                <li style="margin-right: 1rem;"><a href="#">Sign in</a></li>
+                <li style="margin-right: 1rem;"><a href="#" class="button__link">Sign in</a></li>
                 <li><a href="#" class="button__blue--outlined">Go to Drive</a></li>
-                <li><a href="#" class="button__blue">Get started for free</a></li>
+                <li><a href="#" class="button__blue">Try Drive for Work</a></li>
             </ul>
         </div>
     </nav>
-    <div class="container-fluid text-center xl:text-left" style="padding: 2.5rem 1rem; background-color: #fff; min-height: 90vh;">
+    <div class="container-fluid text-center xl:text-left"
+        style="padding: 2.5rem 1rem; background-color: #fff; min-height: 90vh;">
         <div>
             <div class="row" style="align-items: center; row-gap: 2rem;">
                 <div class="col-12 xl:col-5">
@@ -115,7 +120,7 @@
                         risk to your devices. </p>
                 </div>
             </div>
-            <div class="row mt-5 pt-5" id="features">
+            <div class="row mt-5 pt-5">
                 <div class="lg:col-5 d-flex flex-column justify-content-center">
                     <h1 class="heading3">
                         People-first collaboration apps to supercharge teamwork
@@ -127,7 +132,7 @@
                     <img src="images/KJGuhjkjnhg.jpg" alt="" style="width: 100%;">
                 </div>
             </div>
-            <div class="row mt-5 pt-5" id="features">
+            <div class="row mt-5 pt-5">
                 <div class="lg:col-7 pb-4 lg:pb-0">
                     <img src="images/HGhGFdfhgh.jpg" alt="" style="width: 100%;">
                 </div>
@@ -155,7 +160,7 @@
             </div>
         </div>
     </div>
-    <div class="container lg:mt-5 lg:pt-5">
+    <div class="container lg:mt-5 lg:pt-5" style="padding-bottom: 100vh;" id="customers">
         <div class="container-fluid py-5 my-4 px-2">
             <div class="lg:col-7">
                 <h1 class="heading3">
@@ -166,13 +171,16 @@
                         <img src="images/logos/Broadcom.svg" alt="" style="height: 50px;width: 100%;max-width: 180px;">
                     </div>
                     <div class="md:col-6 lg:col-4 xl:col-3 text-center">
-                        <img src="images/logos/logo_Freedom.svg" alt="" style="height: 50px;width: 100%;max-width: 180px;">
+                        <img src="images/logos/logo_Freedom.svg" alt=""
+                            style="height: 50px;width: 100%;max-width: 180px;">
                     </div>
                     <div class="md:col-6 lg:col-4 xl:col-3 text-center">
-                        <img src="images/logos/logo_Sanmina.svg" alt="" style="height: 50px;width: 100%;max-width: 180px;">
+                        <img src="images/logos/logo_Sanmina.svg" alt=""
+                            style="height: 50px;width: 100%;max-width: 180px;">
                     </div>
                     <div class="md:col-6 lg:col-4 xl:col-3 text-center">
-                        <img src="images/logos/logo_Whirlpool.svg" alt="" style="height: 50px;width: 100%;max-width: 180px;">
+                        <img src="images/logos/logo_Whirlpool.svg" alt=""
+                            style="height: 50px;width: 100%;max-width: 180px;">
                     </div>
                 </div>
             </div>
@@ -184,6 +192,28 @@
             let header = document.getElementById("nav");
             if (window.scrollY > 50) header.classList.add("shadow-sm");
             else header.classList.remove("shadow-sm");
+
+            let navTabs = document.querySelectorAll("nav .menu__item");
+            let features = document.getElementById("features");
+            let customers = document.getElementById("customers");
+
+            function gjg() {
+                navTabs.forEach((tab) => {
+                    tab.classList.remove("active");
+                });
+            }
+            if (window.scrollY < features.offsetTop - 150) {
+                gjg();
+                navTabs[0].classList.add("active");
+            }
+            if (window.scrollY > features.offsetTop - 150) {
+                gjg();
+                navTabs[1].classList.add("active");
+            }
+            if (window.scrollY > customers.offsetTop - 150) {
+                gjg();
+                navTabs[2].classList.add("active");
+            }
         }
         window.onload = jhgfYGF;
         window.onscroll = jhgfYGF;
