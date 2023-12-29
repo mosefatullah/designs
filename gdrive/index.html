@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Cloud Storage & File Sharing Platform - Google</title>
+    <link rel="stylesheet" href="../doodleui/dist/doodleui.css">
+    <link rel="shortcut icon" href="images/hh_drive_36dp.png">
+</head>
+
+<body>
+    <nav id="nav" class="w-100"
+        style="height: 60px; background-color: #fff;position: sticky; top: 0; left: 0; z-index: 1000000000; transition: box-shadow .2s cubic-bezier(.4, 0, .2, 1);">
+        <div style="display: flex; align-items: center; height: 100%; padding: 0 1rem;">
+            <div class="logo d-flex">
+                <img src="images/drive.svg" alt="" style="height: 35px;">
+                <svg id="google-solid-logo" class="ml-1" height="24px" viewBox="0 0 74 24"
+                    style="fill: #5f6368;margin-top: 0.55rem">
+                    <path
+                        d="M9.24 8.19v2.46h5.88c-.18 1.38-.64 2.39-1.34 3.1-.86.86-2.2 1.8-4.54 1.8-3.62 0-6.45-2.92-6.45-6.54s2.83-6.54 6.45-6.54c1.95 0 3.38.77 4.43 1.76L15.4 2.5C13.94 1.08 11.98 0 9.24 0 4.28 0 .11 4.04.11 9s4.17 9 9.13 9c2.68 0 4.7-.88 6.28-2.52 1.62-1.62 2.13-3.91 2.13-5.75 0-.57-.04-1.1-.13-1.54H9.24zm15.76-2c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52zm28.58-8.03h-.09c-.57-.68-1.67-1.3-3.06-1.3C47.53 6.19 45 8.72 45 12c0 3.26 2.53 5.81 5.43 5.81 1.39 0 2.49-.62 3.06-1.32h.09v.81c0 2.22-1.19 3.41-3.1 3.41-1.56 0-2.53-1.12-2.93-2.07l-2.22.92c.64 1.54 2.33 3.43 5.15 3.43 2.99 0 5.52-1.76 5.52-6.05V6.49h-2.42v1zm-2.93 8.03c-1.76 0-3.1-1.5-3.1-3.52 0-2.05 1.34-3.52 3.1-3.52 1.74 0 3.1 1.5 3.1 3.54.01 2.03-1.36 3.5-3.1 3.5zM38 6.19c-3.21 0-5.83 2.44-5.83 5.81 0 3.34 2.62 5.81 5.83 5.81s5.83-2.46 5.83-5.81c0-3.37-2.62-5.81-5.83-5.81zm0 9.33c-1.76 0-3.28-1.45-3.28-3.52 0-2.09 1.52-3.52 3.28-3.52s3.28 1.43 3.28 3.52c0 2.07-1.52 3.52-3.28 3.52zM58 .24h2.51v17.57H58zm10.26 15.28c-1.3 0-2.22-.59-2.82-1.76l7.77-3.21-.26-.66c-.48-1.3-1.96-3.7-4.97-3.7-2.99 0-5.48 2.35-5.48 5.81 0 3.26 2.46 5.81 5.76 5.81 2.66 0 4.2-1.63 4.84-2.57l-1.98-1.32c-.66.96-1.56 1.6-2.86 1.6zm-.18-7.15c1.03 0 1.91.53 2.2 1.28l-5.25 2.17c0-2.44 1.73-3.45 3.05-3.45z">
+                    </path>
+                </svg>
+                <h2 class="pl-1 pt-1" style="color: #5f6368">Drive</h2>
+            </div>
+            <style>
+                .menu__item {
+                    color: #5f6368;
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 1.71;
+                    letter-spacing: .2px;
+                    padding: 1rem 0;
+                    transition: color .2s cubic-bezier(.4, 0, .2, 1);
+                }
+
+                .menu__item.active {
+                    color: var(--black);
+                    border-bottom: 2px solid var(--blue);
+                }
+            </style>
+            <ul
+                style="display: flex; align-items: center; list-style: none; margin: 0; padding: 0; gap: 10px; margin-left: 2.25rem;margin-top: 0.3rem;">
+                <li style="margin-right: 1rem;"><a href="#" class="menu__item active">Overview</a></li>
+                <li style="margin-right: 1rem;"><a href="#" class="menu__item">Features</a></li>
+                <li style="margin-right: 1rem;"><a href="#" class="menu__item">Customers</a></li>
+                <li style="margin-right: 1rem;"><a href="#" class="menu__item">Pricing</a></li>
+                <li style="margin-right: 1rem;"><a href="#" class="menu__item">Download</a></li>
+            </ul>
+            <ul
+                style="display: flex; align-items: center; list-style: none; margin: 0; padding: 0; gap: 10px; margin-left: auto;">
+                <li style="margin-right: 1.5rem;"><a href="#"
+                        style="color: inherit;display: flex;align-items: center;">More tools <svg
+                            xmlns="http://www.w3.org/2000/svg" id="expand-more" viewBox="0 0 24 24" width="18"
+                            height="18" class="ml-1">
+                            <path d="M5.41 7.59L4 9l8 8 8-8-1.41-1.41L12 14.17" />
+                        </svg></a></li>
+                <li style="margin-right: 1rem;"><a href="#">Sign in</a></li>
+                <li><a href="#" class="button__blue--outlined">Go to Drive</a></li>
+                <li><a href="#" class="button__blue">Get started for free</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid" style="padding: 2.5rem 0; background-color: #fff; min-height: 90vh;">
+        <div>
+            <div class="row" style="align-items: center; row-gap: 2rem;">
+                <div class="col-12 xl:col-5">
+                    <h1 class="heading1" style="margin-top: 1rem;font-weight: 400;">Easy and secure access to your
+                        content</h1>
+                    <br>
+                    <p class="paragraph">Store, share, and collaborate on files and folders from your mobile device,
+                        tablet, or computer</p>
+                    <br><br>
+                    <button class="button__blue" style="margin-right: 0.7rem;">Try drive for work</button>
+                    <button class="button__blue--outlined">Go to Drive</button>
+                    <br><br>
+                    <p class="paragraph mt-3"><small>Don't have an account?</small> <a href="#"
+                            class="button__blue--text">Sign up at no cost</a></p>
+                </div>
+                <div class="col-12 xl:col-7" style="display: flex; justify-content: center; margin-left: auto;">
+                    <img src="images/Agfchgfh.jpg" alt="" style="border-radius: 16px;width: 100%;" id="imgheader">
+                </div>
+                <style>
+                    @media screen and (max-width: 992px) {
+                        #imgheader {
+                            width: 100%;
+                            max-height: 100% !important;
+                        }
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="padding-top: 2rem;">
+        <div class="border-top pt-4">
+            <a href="#features">
+                <p class="paragraph text-center mt-2"><small>See what you can do with Google Drive</small></p>
+                <p class="text-center mt-2"><svg xmlns="http://www.w3.org/2000/svg" id="expand-more" viewBox="0 0 24 24"
+                        width="26" height="26" class="ml-1">
+                        <path d="M5.41 7.59L4 9l8 8 8-8-1.41-1.41L12 14.17" />
+                    </svg></p>
+            </a>
+            <br>
+            <div class="row mt-5 pt-5" id="features">
+                <div class="lg:col-7 pb-4 lg:pb-0">
+                    <img src="images/YThgjerhygst.jpg" alt="" style="width: 100%;">
+                </div>
+                <div class="lg:col-5 d-flex flex-column justify-content-center">
+                    <h1 class="heading3">
+                        Built-in protections against malware, spam, and ransomware
+                    </h1>
+                    <p class="paragraph mt-4">Drive can provide encrypted and secure access to your files. Files shared
+                        with you can be proactively scanned and removed when malware, spam, ransomware, or phishing is
+                        detected. And Drive is cloud-native, which eliminates the need for local files and can minimize
+                        risk to your devices. </p>
+                </div>
+            </div>
+            <div class="row mt-5 pt-5" id="features">
+                <div class="lg:col-5 d-flex flex-column justify-content-center">
+                    <h1 class="heading3">
+                        People-first collaboration apps to supercharge teamwork
+                    </h1>
+                    <p class="paragraph mt-4">Drive integrates with Docs, Sheets, and Slides, cloud-native collaboration
+                        apps that enable your team to create content and collaborate more effectively in real time. </p>
+                </div>
+                <div class="lg:col-7 pt-5 lg:pt-0 lg:pl-5">
+                    <img src="images/KJGuhjkjnhg.jpg" alt="" style="width: 100%;">
+                </div>
+            </div>
+            <div class="row mt-5 pt-5" id="features">
+                <div class="lg:col-7 pb-4 lg:pb-0">
+                    <img src="images/HGhGFdfhgh.jpg" alt="" style="width: 100%;">
+                </div>
+                <div class="lg:col-5 d-flex flex-column justify-content-center">
+                    <h1 class="heading3">
+                        Integration with the tools and apps your team is already using
+                    </h1>
+                    <p class="paragraph mt-4">Drive integrates with and complements your team’s existing technology.
+                        Collaborate in Microsoft Office files without the need to convert file formats, and edit and
+                        store over 100 additional file types, including PDFs, CAD files, images, and more. </p>
+                </div>
+            </div>
+            <div class="row my-5 py-5" id="features">
+                <div class="lg:col-5 d-flex flex-column justify-content-center">
+                    <h1 class="heading3">
+                        Google’s Search and AI technology helps your team move faster
+                    </h1>
+                    <p class="paragraph mt-4">Google’s powerful search capabilities are embedded in Drive and offer
+                        speed, reliability, and collaboration. And features like Drive search chips help your team find
+                        files fast by quickly surfacing more relevant results. </p>
+                </div>
+                <div class="lg:col-7 pt-5 lg:pt-0 lg:pl-5">
+                    <img src="images/pHGFhkghf.jpg" alt="" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container lg:mt-5 lg:pt-5">
+        <div class="container-fluid py-5 my-4 px-2">
+            <div class="lg:col-7">
+                <h1 class="heading3">
+                    Thousands of teams are already using Drive to revolutionize the way they work
+                </h1>
+                <div class="row row-gap-4 mt-5">
+                    <div class="md:col-6 lg:col-4 xl:col-3 text-center">
+                        <img src="images/logos/Broadcom.svg" alt="" style="height: 50px;width: 100%;max-width: 180px;">
+                    </div>
+                    <div class="md:col-6 lg:col-4 xl:col-3 text-center">
+                        <img src="images/logos/logo_Freedom.svg" alt="" style="height: 50px;width: 100%;max-width: 180px;">
+                    </div>
+                    <div class="md:col-6 lg:col-4 xl:col-3 text-center">
+                        <img src="images/logos/logo_Sanmina.svg" alt="" style="height: 50px;width: 100%;max-width: 180px;">
+                    </div>
+                    <div class="md:col-6 lg:col-4 xl:col-3 text-center">
+                        <img src="images/logos/logo_Whirlpool.svg" alt="" style="height: 50px;width: 100%;max-width: 180px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function jhgfYGF() {
+            let header = document.getElementById("nav");
+            if (window.scrollY > 50) header.classList.add("shadow-sm");
+            else header.classList.remove("shadow-sm");
+        }
+        window.onload = jhgfYGF;
+        window.onscroll = jhgfYGF;
+    </script>
+</body>
+
+</html>
