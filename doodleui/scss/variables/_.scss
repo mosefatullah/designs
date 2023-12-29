@@ -18,3 +18,8 @@ $row-gutter-y: 0;
 // Components
 $accordion-gutter-x: 0;
 $accordion-gutter-y: 1.5rem;
+$waiter-box-gap: 1rem;
+$waiter-box-height: 0.3rem;
+:root {
+ --ddui-field-border-color: var(--blue);
+}

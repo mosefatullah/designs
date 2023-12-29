@@ -7,7 +7,6 @@
  * @license MIT
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/**/
 /* Best practice: remove root variables if not used at least once */
 :root {
   --red: rgb(234, 67, 53);
@@ -547,6 +546,10 @@
   --gradient-linear-mintgreen-brilliantblue: linear-gradient(90deg, #8de971 17.14%, #0778d4 82.76%);
 }
 
+:root {
+  --ddui-field-border-color: var(--blue);
+}
+
 *,
 *::before,
 *::after {
@@ -567,12 +570,6 @@ body {
   letter-spacing: 0.1px;
   background-color: rgb(255, 255, 255);
   color: rgb(32, 33, 36);
-}
-
-button {
-  border: none;
-  outline: none;
-  cursor: pointer;
 }
 
 h1,
@@ -613,6 +610,59 @@ nav,
 section,
 summary {
   display: block;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .heading1 {
@@ -1293,6 +1343,59 @@ summary {
   }
 }
 /* Structure */
+.bg-none,
+.txt-none {
+  background: none !important;
+}
+.bg-red,
+.txt-red {
+  background: rgb(234, 67, 53) !important;
+}
+.bg-orange,
+.txt-orange {
+  background: rgb(255, 159, 67) !important;
+}
+.bg-yellow,
+.txt-yellow {
+  background: rgb(251, 188, 4) !important;
+}
+.bg-green,
+.txt-green {
+  background: rgb(52, 168, 83) !important;
+}
+.bg-blue,
+.txt-blue {
+  background: rgb(66, 133, 244) !important;
+}
+.bg-indigo,
+.txt-indigo {
+  background: rgb(67, 56, 202) !important;
+}
+.bg-violet,
+.txt-violet {
+  background: rgb(109, 40, 217) !important;
+}
+.bg-grey,
+.txt-grey {
+  background: rgb(95, 99, 104) !important;
+}
+.bg-light,
+.txt-light {
+  background: rgb(248, 249, 250) !important;
+}
+.bg-dark,
+.txt-dark {
+  background: rgb(32, 33, 36) !important;
+}
+.bg-black,
+.txt-black {
+  background: rgb(0, 0, 0) !important;
+}
+.bg-white,
+.txt-white {
+  background: rgb(255, 255, 255) !important;
+}
+
 .border {
   border: 1px solid #e5e5e5 !important;
 }
@@ -1321,39 +1424,51 @@ summary {
 }
 .border-red {
   border-color: rgb(234, 67, 53) !important;
+  --ddui-field-border-color: var(--red);
 }
 .border-orange {
   border-color: rgb(255, 159, 67) !important;
+  --ddui-field-border-color: var(--orange);
 }
 .border-yellow {
   border-color: rgb(251, 188, 4) !important;
+  --ddui-field-border-color: var(--yellow);
 }
 .border-green {
   border-color: rgb(52, 168, 83) !important;
+  --ddui-field-border-color: var(--green);
 }
 .border-blue {
   border-color: rgb(66, 133, 244) !important;
+  --ddui-field-border-color: var(--blue);
 }
 .border-indigo {
   border-color: rgb(67, 56, 202) !important;
+  --ddui-field-border-color: var(--indigo);
 }
 .border-violet {
   border-color: rgb(109, 40, 217) !important;
+  --ddui-field-border-color: var(--violet);
 }
 .border-grey {
   border-color: rgb(95, 99, 104) !important;
+  --ddui-field-border-color: var(--grey);
 }
 .border-light {
   border-color: rgb(248, 249, 250) !important;
+  --ddui-field-border-color: var(--light);
 }
 .border-dark {
   border-color: rgb(32, 33, 36) !important;
+  --ddui-field-border-color: var(--dark);
 }
 .border-black {
   border-color: rgb(0, 0, 0) !important;
+  --ddui-field-border-color: var(--black);
 }
 .border-white {
   border-color: rgb(255, 255, 255) !important;
+  --ddui-field-border-color: var(--white);
 }
 
 .shadow-none {
@@ -1884,6 +1999,9 @@ summary {
 }
 .p-5 {
   padding: 3rem !important;
+}
+.p-6 {
+  padding: 4rem !important;
 }
 .p-auto {
   padding: auto !important;
@@ -2496,6 +2614,9 @@ summary {
   .sm\:p-5 {
     padding: 3rem !important;
   }
+  .sm\:p-6 {
+    padding: 4rem !important;
+  }
   .sm\:p-auto {
     padding: auto !important;
   }
@@ -3079,6 +3200,9 @@ summary {
   }
   .md\:p-5 {
     padding: 3rem !important;
+  }
+  .md\:p-6 {
+    padding: 4rem !important;
   }
   .md\:p-auto {
     padding: auto !important;
@@ -3664,6 +3788,9 @@ summary {
   .lg\:p-5 {
     padding: 3rem !important;
   }
+  .lg\:p-6 {
+    padding: 4rem !important;
+  }
   .lg\:p-auto {
     padding: auto !important;
   }
@@ -4247,6 +4374,9 @@ summary {
   }
   .xl\:p-5 {
     padding: 3rem !important;
+  }
+  .xl\:p-6 {
+    padding: 4rem !important;
   }
   .xl\:p-auto {
     padding: auto !important;
@@ -5218,6 +5348,76 @@ summary {
 }
 .breadcrumb .breadcrumb__item.active::after {
   content: "";
+}
+
+.field {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  outline: none;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.field:focus {
+  outline: 1px solid var(--ddui-field-border-color);
+}
+
+input[type=checkbox]:focus, input[type=radio]:focus {
+  outline: none;
+}
+
+.waiter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+@keyframes waiter {
+  0% {
+    background-color: #e9ecef;
+  }
+  50% {
+    background-color: #dae0e5;
+  }
+  100% {
+    background-color: #e9ecef;
+  }
+}
+.waiter .waiter__box, .waiter [class*=waiter__box--] {
+  width: 100%;
+  min-height: 0.3rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  margin: 0;
+  border: none;
+  animation: waiter 1s infinite ease-in-out;
+}
+.waiter .waiter__box:last-child, .waiter [class*=waiter__box--]:last-child {
+  margin-bottom: 0;
+}
+.waiter .waiter__box--cover {
+  aspect-ratio: 16/4;
+}
+.waiter .waiter__box--profile {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.waiter .waiter__box--1\:1 {
+  aspect-ratio: 1/1;
+}
+.waiter .waiter__box--16\:9 {
+  aspect-ratio: 16/9;
+}
+.waiter .waiter__box--4\:3 {
+  aspect-ratio: 4/3;
+}
+.waiter .waiter__box--3\:2 {
+  aspect-ratio: 3/2;
 }
 
 /*# sourceMappingURL=doodleui.css.map */

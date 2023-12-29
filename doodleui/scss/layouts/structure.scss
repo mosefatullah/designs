@@ -1,4 +1,46 @@
 /* Structure */
+.bg,
+.txt {
+ &-none {
+  background: none !important;
+ }
+ &-red {
+  background: $red !important;
+ }
+ &-orange {
+  background: $orange !important;
+ }
+ &-yellow {
+  background: $yellow !important;
+ }
+ &-green {
+  background: $green !important;
+ }
+ &-blue {
+  background: $blue !important;
+ }
+ &-indigo {
+  background: $indigo !important;
+ }
+ &-violet {
+  background: $violet !important;
+ }
+ &-grey {
+  background: $grey !important;
+ }
+ &-light {
+  background: $light !important;
+ }
+ &-dark {
+  background: $dark !important;
+ }
+ &-black {
+  background: $black !important;
+ }
+ &-white {
+  background: $white !important;
+ }
+}
 .border {
  border: 1px solid #e5e5e5 !important;
  &-none {
@@ -26,39 +68,51 @@
  }
  &-red {
   border-color: $red !important;
+  --ddui-field-border-color: var(--red);
  }
  &-orange {
   border-color: $orange !important;
+  --ddui-field-border-color: var(--orange);
  }
  &-yellow {
   border-color: $yellow !important;
+  --ddui-field-border-color: var(--yellow);
  }
  &-green {
   border-color: $green !important;
+  --ddui-field-border-color: var(--green);
  }
  &-blue {
   border-color: $blue !important;
+  --ddui-field-border-color: var(--blue);
  }
  &-indigo {
   border-color: $indigo !important;
+  --ddui-field-border-color: var(--indigo);
  }
  &-violet {
   border-color: $violet !important;
+  --ddui-field-border-color: var(--violet);
  }
  &-grey {
   border-color: $grey !important;
+  --ddui-field-border-color: var(--grey);
  }
  &-light {
   border-color: $light !important;
+  --ddui-field-border-color: var(--light);
  }
  &-dark {
   border-color: $dark !important;
+  --ddui-field-border-color: var(--dark);
  }
  &-black {
   border-color: $black !important;
+  --ddui-field-border-color: var(--black);
  }
  &-white {
   border-color: $white !important;
+  --ddui-field-border-color: var(--white);
  }
 }
 .shadow {
@@ -624,6 +678,9 @@
  }
  &-5 {
   padding: 3rem !important;
+ }
+ &-6 {
+  padding: 4rem !important;
  }
  &-auto {
   padding: auto !important;
@@ -1289,6 +1346,9 @@
   &-5 {
    padding: 3rem !important;
   }
+  &-6 {
+   padding: 4rem !important;
+  }
   &-auto {
    padding: auto !important;
   }
@@ -1926,6 +1986,9 @@
   }
   &-5 {
    padding: 3rem !important;
+  }
+  &-6 {
+   padding: 4rem !important;
   }
   &-auto {
    padding: auto !important;
@@ -2565,6 +2628,9 @@
   &-5 {
    padding: 3rem !important;
   }
+  &-6 {
+   padding: 4rem !important;
+  }
   &-auto {
    padding: auto !important;
   }
@@ -3202,6 +3268,9 @@
   }
   &-5 {
    padding: 3rem !important;
+  }
+  &-6 {
+   padding: 4rem !important;
   }
   &-auto {
    padding: auto !important;
