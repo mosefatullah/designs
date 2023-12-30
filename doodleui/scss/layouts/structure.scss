@@ -941,6 +941,13 @@
   position: sticky !important;
  }
 }
+.img {
+ &-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+ }
+}
 
 @media (min-width: 576px) {
  .sm\:float {
