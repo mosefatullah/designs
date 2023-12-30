@@ -127,7 +127,7 @@
      window.addEventListener("scroll", function () {
       let pxOfE = e.getBoundingClientRect().top;
       let pxOfW = window.scrollY;
-      if (typeof h === "function") h(pxOfE, pxOfW);
+      if (typeof h === "function") h(pxOfE, pxOfW, e);
      });
     }
     DoodleUIPrivate._getElement.call(self, _e);
