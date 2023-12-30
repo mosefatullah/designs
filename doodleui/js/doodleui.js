@@ -2,7 +2,7 @@
  * DoodleUI v0.1.0
  * by Mohammad Sefatullah
  *
- * More info:
+ * Github Link:-
  * https://github.com/mosefatullah/ui/tree/main/doodleui
  *
  * Copyright (c)
@@ -60,8 +60,9 @@
  //** Default options
  DoodleUI.defaults = {};
 
- //** All
+ //** Public methods
  const _ = [
+  // Functionality to enable image zooming in and out
   [
    "zoom",
    function () {
@@ -95,6 +96,7 @@
     DoodleUIPrivate._getElement.call(self, _e);
    },
   ],
+  // Functionality to observe an element constantly on screen
   [
    "observe",
    function (is, isnot) {
@@ -118,6 +120,7 @@
     DoodleUIPrivate._getElement.call(self, _e);
    },
   ],
+  // Functionality to observe an element based on scrolling
   [
    "scroll",
    function (h) {
@@ -143,7 +146,7 @@
   }
  });
 
- //** Private
+ //** Private methods
  DoodleUIPrivate._getElement = function (_e) {
   let self = this;
   if (self.elem) {
